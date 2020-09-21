@@ -1,0 +1,101 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <title>Challenges</title>
+</head>
+
+<body>
+    <div class="container-1">
+        <h2>Challenge 1: Your age in days</h2>
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary" onClick="showAgeInDays()">Click me</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onClick="reset()">Reset</button>
+            </div>
+        </div>
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"></div>
+        </div>
+    </div>
+    <div class="container-2">
+        <h2>Challenge 2: Generate Cat</h2>
+        <div class="flex-box-container-2">
+            <button class="btn btn-success" onclick="generateCat()">Generate Cat</button>
+        </div>
+        <div class="flex-box-container-2">
+            <div id="flex-box-cat">
+            </div>
+        </div>
+    </div>
+    <div class="container-3">
+        <h2>Challenge 3: Rock, Paper and scissors</h2>
+        <div id="rps" class="flex-box-container-3">
+            <img id="rock" src="https://images.homedepot-static.com/productImages/94af8836-0338-4802-914e-04cc71e562ad/svn/backyard-x-scapes-fake-rocks-hdd-rof-rocsb-64_1000.jpg"
+                height="150" width="150" onclick="gameResult(this)" />
+            <img id="paper" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ4fcmOqOKnEaan2RtOInWKm1RIyqO4q6Ew5w&usqp=CAU"
+                height="150" width="150" onclick="gameResult(this)" />
+            <img id="scissors" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQJoAEu6QwGeJc9JrSzc-wM2dHoMHNmGzwFQw&usqp=CAU"
+                height="150" width="150" onclick="gameResult(this)" />
+        </div>
+    </div>
+    <div class="container-4">
+        <h2 id="change-my-color">Challenge 4: Change button colors</h2>
+        <div class="flex-box-container-4">
+            <select id="background" onchange="buttonColorChange(this)">
+                <option value="random">Random</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="reset">Reset</option>
+            </select>
+            <button class="btn btn-primary">Wee!</button>
+            <button class="btn btn-warning">Yahoo!</button>
+            <button class="btn btn-danger">Google!</button>
+            <button class="btn btn-success">Facebook!</button>
+        </div>
+    </div>
+    <div class="container-5">
+        <h2>Challenge 5: BlackJack</h2>
+        <h3><span id="blackjack-result">Let's Play</span></h3>
+
+        <div class="flex-blackjack-row-1">
+            <div id="your-box">
+                <h2>You: <span id="your-result">0</span></h2>
+            </div>
+            <div id="dealer-box">
+                <h2>Dealer: <span id="dealer-result">0</span></h2>
+            </div>
+        </div>
+        <div class="flex-blackjack-row-2">
+            <div>
+                <button class="btn-lg btn-primary mr-2" id="hit">Hit</button>
+                <button class="btn-lg btn-warning mr-2" id="stand">Stand</button>
+                <button class="btn-lg btn-danger" id="deal">Deal</button>
+            </div>
+        </div>
+        <div class="flex-blackjack-row-3">
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+    <script src="static/js/index.js"></script>
+</body>
+
+</html>
